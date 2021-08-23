@@ -7,3 +7,89 @@ body {
     font-family: 'Roboto', sans-serif;
     color:#303030;
 }
+p {
+    font-weight: 100;
+    line-height: 3rem;
+    font-size: 1.2rem;
+}
+/** Navegacion **/
+.nav-link, .nav-link:hover {
+    text-transform: uppercase;
+    color: #000000;
+}
+
+/** Imagenes principales**/
+
+.bg-primary {
+    background-color: var(--primario)!important;
+}
+.bg-secondary {
+    background-color: var(--secundario)!important;
+}
+.bg-vino {
+    background-image: url('../img/principal1.jpg');
+}
+
+.bg-comida {
+    background-image: url('../img/principal2.jpg'); 
+}
+
+.imagen {
+    background-size: cover;
+    background-position: top center;
+}
+
+.imagen-superior > div,
+.imagen-inferior > div {
+    height: 30rem;
+}
+
+@media (min-width: 768px) {
+    .imagen-superior > div,
+    .imagen-inferior > div {
+        height: 45rem;
+    }
+}
+
+.imagen-inferior .bg-comida {
+    order: 1;
+}
+
+@media (min-width: 768px) {
+    .imagen-inferior .bg-comida {
+        order: unset;
+    }
+}
+
+.imagen-superior .contenido {
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.imagen-inferior .contenido {
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.contenido p {
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 2rem;
+}
+
+/** Nosotros **/
+.separador::after {
+    content: '';
+    display: block;
+    width: 300px;
+    height: 100px;
+    background-image: url('../img/separador.png');
+    background-position: center center;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+}
+
+.nosotros .informacion h3 {
+    font-weight: 300;
+    font-size: 1.6rem;
+}
